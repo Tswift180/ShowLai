@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="resouces/css/all/dcalendar.picker.css" />
+		<link rel="stylesheet" href="resouces/css/index/css_index.css" />
+		 		 
+		<script type="text/javascript" src="resouces/js/all/jquery-1.12.2.min.js" ></script>
+		<script type="text/javascript" src="resouces/js/all/jquery-1.12.2.js" ></script>
+		<script type="text/javascript" src="resouces/js/all/dcalendar.picker.js" ></script>
+		<script type="text/javascript" src="resouces/js/all/animation.js" ></script>
+		
+		<js
+		
+		
+		 	
+	</head>
+	<body>
+		
+	<div class="nav">
+		  <div class="button_group">
+			<button type="button" id="registe_button" >注册</button>
+	        <button type="button" id="login_button">登录</button>		
+		  </div>	
+	    </div>
+	
+	<div class="main">
+		
+		                            	       	
+        	
+    	<div class="ad"> 
+    		
+    		<p id="frist_p">创造二零七</p>
+    		<p id="second_p">欢迎您的预定<br/>
+    			我们给您最温馨的体验 、最舒适的休息空间<br />
+    			为您创造美好旅程的落脚点、健康舒适尽在二零七</p>
+    			
+    	  <div class="data_box">   	  	 	  	
+    	  	<ul>
+    	  		<li><input type="text" id="datepicker1" class="datepicker" placeholder="入住时间"/></li>
+    	  		<li><input type="text" id="datepicker2" class="datepicker" placeholder="退房时间"/></li>
+    	  		<li><button type="button" id="querybutton" onclick="tohome()">查询</button></li>
+    	  		<script>
+    	  			
+    	  			function tohome()
+    	  			{
+    	  				window.open("view/Home.jsp");
+    	  			}
+    	  			
+    	  		</script>
+    	  	</ul>  	  	
+    	  </div>   	  
+    	</div>
+			
+	</div>
+	
+ 	<script type="text/javascript">
+ 		$('#datepicker1').dcalendarpicker({
+			format:'yyyy-mm-dd'
+		});
+		$('#datepicker2').dcalendarpicker({
+			format:'yyyy-mm-dd'
+		});		
+ 	</script>
+ 	
+ 	<div class="user_login">
+ 		
+ 		<form id="login_form">
+ 			<ul>
+ 				<li class="li_fontstyle">账号：</li>
+ 				<li><input type="text" name="username" id="username" placeholder="您的账号"/></li>
+ 			</ul>
+ 			<ul>
+ 				<li class="li_fontstyle">密码：</li>
+ 				<li><input type="password" name="userpwd" id="userpwd" placeholder="您的密码"/></li>
+ 			</ul>
+ 			<ul>
+ 				<li><input type="submit" name="login_submit" id="login_submit" value="登录"/></li>
+ 			</ul>			
+ 		</form>
+ 		
+ 		<form id="registe_form">
+ 			<ul id="registe_frist_ul">
+ 				<li class="li_fontstyle">账号：</li>
+ 				<li><input type="text" name="registe_name" id="registe_name" placeholder="您的账号"/></li>
+ 				<li class="li_fontstyle">密码：</li>
+ 				<li><input type="password" name="registe_pwd" id="registe_pwd" placeholder="您的密码"/></li>
+ 				<li class="li_fontstyle">电话：</li>
+ 				<li><input type="text" name="registe_phone" id="registe_phone" placeholder=""/></li>
+ 				<li class="li_fontstyle">邮箱：</li>
+ 				<li><input type="text" name="registe_email" id="registe_email" placeholder=""/></li>
+ 			</ul>
+ 			<br />
+ 			<br /> 			
+ 			<ul id="registe_second_ul">
+ 				<li class="li_fontstyle">姓名：</li>
+ 				<li><input type="text" name="real_name" id="real_name"/></li>
+ 				<li class="li_fontstyle">性别：</li>
+ 				<li>
+ 					男
+ 					<input type="radio" name="sex_radio" id="sex_radio"/>
+ 					女
+ 					<input type="radio" name="sex_radio" id="sex_radio"/>
+ 				</li>
+ 			</ul>
+
+ 			<ul>
+ 				<li><input type="submit" name="registe_submit" id="registe_submit" value="注册"/></li>
+ 			</ul>
+			
+ 		</form>
+ 		
+ 		
+ 	</div>
+ 					
+ 	<div class="footer">
+ 	     	
+ 		<ul>
+           <li><a>关于我们</a></li>
+           <li><a>订房指南</a></li>
+           <li><a>法律声明</a></li>
+           <li><a>使用规则</a></li>
+        </ul>
+ 		<p>@This web copyright of Produce207</p>
+ 		
+ 	</div>
+ 	
+	</body>
+</html>
